@@ -54,12 +54,27 @@ h1 {
   margin: 40px 0 6px;
 }
 
+/* Bölüm etiketi — uygulamanın içindeki başlıklarla aynı dil. */
 h2 {
   color: var(--faint);
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 40px 0 12px;
+}
+
+/*
+ * SORU başlığı. h2'nin küçük-büyük harf dilini KULLANMAZ: bir soru bağırılmaz,
+ * sorulur. Ayrıca destek sayfasında yedi soru yan yana dizilirken hepsi bölüm
+ * etiketi gibi görünseydi hangisinin başlık hangisinin cevap olduğu ancak
+ * okuyarak anlaşılırdı — tarama imkânsız hale gelirdi.
+ */
+h3 {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 34px 0 8px;
 }
 
 .date { color: var(--faint); font-size: 13px; letter-spacing: 1px; margin: 0 0 8px; }
