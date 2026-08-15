@@ -86,6 +86,33 @@ li { margin-bottom: 8px; }
 
 a { color: var(--ink); }
 
+/*
+ * TAKİP DÜĞMESİ — sayfadaki TEK düğme, bilerek.
+ *
+ * Uygulamanın kendi "Choose from library" hapıyla aynı biçim: koyu zeminde kağıt
+ * rengi dolgu, tam yuvarlak uç. Site ile uygulamanın aynı ürün olduğu, metin
+ * okunmadan da anlaşılmalı.
+ *
+ * ⚠️ Sayfada ikinci bir düğme OLMAMALI. Buraya kadar okuyan kişinin yapabileceği
+ * tek şey var; ona bir seçenek daha vermek tıklamayı ikiye böler.
+ */
+.cta { margin: 20px 0 10px; }
+
+.btn {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 999px;
+}
+
+/* E-posta yolu bilerek küçük: ikincil, düğmeyle yarışmasın. */
+.small { font-size: 14px; color: var(--faint); }
+.small a { color: var(--dim); }
+
 footer {
   max-width: 680px;
   margin: 72px auto 0;
